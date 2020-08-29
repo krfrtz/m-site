@@ -1,14 +1,10 @@
+/*general*/
 body {
   margin: 0;
   min-width: 960px;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
-  color: #222222;
-  background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .container {
@@ -28,40 +24,13 @@ body {
   text-align: right;
 }
 
-.page-header a {
-  margin-left: 56px;
-  color: #288be6;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.header-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
-}
-
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
-}
-
 .hero-image {
   margin-bottom: 620px;
-    
 }
 
 .hero-image .container {
   max-width: 1408px;
   text-align: center;
-}
-
-.heading {
-  margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
-  line-height: 96px;
-  font-weight: 400;
 }
 
 .hero-image p {
@@ -74,22 +43,12 @@ body {
   margin: 0 0 120px;
 }
 
-.subheading {
-  margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
-  line-height: 80px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .user-image {
   margin: 0 0 32px;
   text-align: center;
 }
 
-.intro h3,
-.portfolio h3 {
+.intro h3, .portfolio h3 {
   margin: 0 0 12px;
   font-size: 28px;
   line-height: 40px;
@@ -119,23 +78,6 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
-}
-
 .portfolio {
   margin: 0 0 120px;
 }
@@ -159,7 +101,85 @@ body {
   margin: 0 0 24px;
 }
 
-.button {
+
+/*Light theme*/
+.light-theme {
+  color: #222222;
+  background-color: #f2f4f6;
+  background-image: url("img/hero-bg-light.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.light-theme .theme-button {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: #ffffff;
+  border: 1px solid #288be6;
+  border-radius: 50%;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  background: #288be6;
+  opacity: 0.5;
+    position: fixed;
+}
+
+.light-theme .page-header a {
+  margin-left: 56px;
+  color: #288be6;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.light-theme .header-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email-header.svg");
+}
+
+.light-theme .header-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone-header.svg");
+}
+
+.light-theme .heading {
+  margin: 0 0 16px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 88px;
+  line-height: 96px;
+  font-weight: 400;
+}
+
+.light-theme .subheading {
+  margin: 0 0 56px;
+  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.light-theme .level {
+  margin: 4px 0 16px;
+  padding: 0;
+  height: 14px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #86c3fa;
+  border-radius: 8px;
+}
+
+.light-theme .level div {
+  margin: 1px;
+  height: 12px;
+  background-color: #288be6;
+  border-radius: 6px;
+}
+
+.light-theme .button {
   padding: 6px 20px;
   display: inline-block;
   vertical-align: baseline;
@@ -170,14 +190,14 @@ body {
   color: #ffffff;
 }
 
-.page-footer {
+.light-theme .page-footer {
   padding: 40px 0;
   background-color: #00417d;
   color: #ffffff;
     border: 3px solid #00417d;
 }
 
-.page-footer a {
+.light-theme .page-footer a {
   margin-left: 56px;
   color: inherit;
   text-decoration: none;
@@ -185,12 +205,120 @@ body {
   background-position: left;
 }
 
-.footer-email {
-  padding-left: 30px;
+.light-theme .footer-email {
+    padding-left: 30px;
+    background-image: url("img/icon-email-footer.svg");
+}
+
+.light-theme .footer-phone {
+  padding-left: 25px;
   background-image: url("img/icon-email-footer.svg");
 }
 
-.footer-phone {
+/*Dark theme*/
+.dark-theme {
+  color: #f2f2f2;
+  background-color: #080208;
+  background-image: url("img/hero-bg-dark.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.dark-theme .theme-button {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: #fea18d;
+  border: 1px solid #fea18d;
+  border-radius: 50%;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  background: #080208;
+  opacity: 0.5;
+  background-position: left;
+    position: fixed;
+}
+
+.dark-theme .page-header a {
+  margin-left: 56px;
+  color: #fea18d;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.dark-theme .header-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email.svg");
+}
+
+.dark-theme .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+  background-image: url("img/icon-phone.svg");
+}
+
+.dark-theme .heading {
+  margin: 0 0 24px;
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.dark-theme .subheading {
+  margin: 0 0 56px;
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.dark-theme .level {
+  margin: 4px 0 16px;
+  padding: 0;
+  height: 14px;
+  font-size: 0;
+  background-color: #080208;
+  border: 1px solid #712073;
+  border-radius: 8px;
+}
+
+.dark-theme .level div {
+  margin: 1px;
+  height: 12px;
+  background-color: #fea18d;
+  border-radius: 6px;
+}
+
+.dark-theme .button {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #712073;
+  color: #ffffff;
+}
+
+.dark-theme .page-footer {
+  padding: 40px 0;
+  background-color: #260c26;
+}
+
+.dark-theme .page-footer a {
+  margin-left: 56px;
+  color: #fea18d;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.dark-theme .footer-email {
+  padding-left: 30px;
+  background-image: url("img/icon-email.svg");
+}
+
+.dark-theme .footer-phone {
+  padding-left: 25px;
+  background-image: url("img/icon-phone.svg");
 }
